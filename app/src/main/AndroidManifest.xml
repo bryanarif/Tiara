@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher_new"
+        android:label="Si Tiara"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SiTiara"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainInfo"
+            android:exported="false" />
+        <activity
+            android:name=".DeteksiSadari"
+            android:exported="false" />
+        <activity
+            android:name=".DeteksiSadanis"
+            android:exported="false" />
+        <activity
+            android:name=".DeteksiIVa"
+            android:exported="false" />
+        <activity
+            android:name=".payudara.KankerPayudaraResiko"
+            android:exported="false" />
+        <activity
+            android:name=".payudara.KankerPayudaraPenyebab"
+            android:exported="false" />
+        <activity
+            android:name=".payudara.KankerPayudaraCegah"
+            android:exported="false" />
+        <activity
+            android:name=".payudara.KankerPayudaraGejala"
+            android:exported="false" />
+        <activity
+            android:name=".payudara.KankerPayudaraItu"
+            android:exported="false" />
+        <activity
+            android:name=".serius.KankerSeriusCegah"
+            android:exported="false" />
+        <activity
+            android:name=".serius.KankerSeriusGejala"
+            android:exported="false" />
+        <activity
+            android:name=".serius.KankerSeriusResiko"
+            android:exported="false" />
+        <activity
+            android:name=".serius.KankerSeriusPenyebab"
+            android:exported="false" />
+        <activity
+            android:name=".serius.KankerSeriusItu"
+            android:exported="false" />
+        <activity
+            android:name=".DeteksiDini"
+            android:exported="false" />
+        <activity
+            android:name=".KankerPayudara"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".KankerSerius"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
